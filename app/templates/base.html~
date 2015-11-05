@@ -16,10 +16,10 @@
         </div>
     </div>
     <div id="content-container">
+    <div id="content">
     {% block content %}
     {% endblock %}
-    {% block maincontent %}
-    {% endblock %}
+    </div>
     </div>
     </body>
 </html>
