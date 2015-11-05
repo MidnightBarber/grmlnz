@@ -1,10 +1,7 @@
-body {
+body, html {
     font-family: Arial, sans-serif;
     margin: 0px;
-}
-
-h1 {
-    color: white;
+    height: 100%;
 }
 
 #header-container {
@@ -49,7 +46,15 @@ h1 {
 }
 
 #content-container {
-    height: 100vh;
+    height: calc();
     background-image: url("../images/grmlnz-g.png");
     background-size: cover;
+}
+
+#content {
+    height: 100%;
+    width: 70em;
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: auto;
 }
