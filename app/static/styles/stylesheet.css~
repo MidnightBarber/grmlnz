@@ -10,6 +10,7 @@ body, html {
     background-image: url("../images/bullet.png");
     background-size: cover;
     height: 10em;
+    overflow: hidden;
 }
 
 #header {
@@ -32,7 +33,7 @@ body, html {
 #header a {
     display: table-cell;
     vertical-align: middle;
-    width: 5em;
+    width: 4em;
     text-decoration: none;
     color: white;
     /*border: .2em solid black;*/
@@ -46,15 +47,19 @@ body, html {
 }
 
 #content-container {
-    height: calc();
+    height: calc(100% - 10em);
+    background-color: #222;
     background-image: url("../images/grmlnz-g.png");
-    background-size: cover;
+    background-size: 70em;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #content {
     height: 100%;
     width: 70em;
     margin: 0px auto;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(95, 95, 95, 0.85);
     overflow: auto;
 }
