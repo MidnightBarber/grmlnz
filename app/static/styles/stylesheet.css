@@ -51,7 +51,7 @@ body, html {
     background-color: #222;
     background-image: url("../images/grmlnz-g.png");
     background-size: 70em;
-    background-position: center;
+    background-position: 50% 2em;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
