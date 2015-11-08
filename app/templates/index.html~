@@ -1,4 +1,4 @@
 {% extends "homebase.html" %}
-{% block maincontent %}
+{% block content %}
 <h1>Index</h1>
 {% endblock %}

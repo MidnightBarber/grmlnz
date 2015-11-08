@@ -1,12 +1,16 @@
-body {
+body, html {
     font-family: Arial, sans-serif;
+    margin: 0px;
+    height: 100%;
 }
 
 #header-container {
     position: relative;
     width: 100%;
-    background-color: blue;
+    background-image: url("../images/bullet.png");
+    background-size: cover;
     height: 10em;
+    overflow: hidden;
 }
 
 #header {
@@ -29,7 +33,7 @@ body {
 #header a {
     display: table-cell;
     vertical-align: middle;
-    width: 5em;
+    width: 4em;
     text-decoration: none;
     color: white;
     /*border: .2em solid black;*/
@@ -37,6 +41,25 @@ body {
 }
 
 #header a:hover {
-    background-color: rgba(75, 75, 75, 0.6);
+    background-color: rgba(75, 75, 75, 0.7);
     box-shadow: 0px 0px 2em 0.5em rgb(75, 75, 75);
+    text-shadow: 0px 0px 0.5em rgb(255, 255, 255);
+}
+
+#content-container {
+    height: calc(100% - 10em);
+    background-color: #222;
+    background-image: url("../images/grmlnz-g.png");
+    background-size: 70em;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#content {
+    height: 100%;
+    width: 70em;
+    margin: 0px auto;
+    background-color: rgba(95, 95, 95, 0.85);
+    overflow: auto;
 }
