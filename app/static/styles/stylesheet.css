@@ -48,12 +48,19 @@ body {
 	background-image: url("../images/grmlnz-g.png");
 	background-size: cover;
 
+	}
 #facebook {
 	background-image: url("../images/facebookbutton.png");
+	height: 5em;
+	width: 5em;
+	background-size: cover;
 	}
 	
 #bandcamp {
 	background-image: url("../images/bandcampbutton.png");
+	height: 5em;
+	width: 5em;
+	background-size: cover;
 	}
 	
 	
