@@ -2,6 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../static/styles/stylesheet.css" />
+        {% if {{ page == "index" }} %}
+        <link rel="stylesheet" type="text/css" hreff="../static/styles/stylesheet-index.css" />
+        {% endif %}
     </head>
     <body>
     <div id="header-container">
@@ -16,10 +19,10 @@
         </div>
     </div>
     <div id="content-container">
-    <div id="content">
-    {% block content %}
-    {% endblock %}
-    </div>
+        <div id="content">
+        {% block content %}
+        {% endblock %}
+        </div>
     </div>
     </body>
 </html>
