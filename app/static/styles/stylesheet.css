@@ -68,19 +68,40 @@ body, html {
     overflow: auto;
 }
 
-#facebook {
+#social-media-button-container {
+    position: absolute;
+    display: table;
+    left: 0.5em;
+    top: 10em;
+    list-style: none;
+    text-align: center;
+    width: 10em;
+    height: 4.5em;
+    
+}
+
+#social-media-button-container a {
+    display: table-cell;
+    text-decoration: none;
+    height: auto;
+    padding: 0;
+}
+
+.social-media-button {
+    display: inline-block;
+    width: 3.5em;
+    height: 3.5em;
+    
+    background-size: cover;
+}
+
+#facebook { 
 	background-image: url("../images/facebookbutton.png");
-	height: 5em;
-	width: 5em;
-	background-size: cover;
-	}
+}
 	
 #bandcamp {
-	background-image: url("../images/bandcampbutton.png");
-	height: 5em;
-	width: 5em;
-	background-size: cover;
-	}
+	background-image: url("../images/BandcampButton.png");
+}
 	
 
 	

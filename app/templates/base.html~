@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../static/styles/stylesheet.css" />
-        {% if {{ page == "index" }} %}
+        {% if page == "index" %}
         <link rel="stylesheet" type="text/css" hreff="../static/styles/stylesheet-index.css" />
         {% endif %}
     </head>
@@ -24,5 +24,14 @@
         {% endblock %}
         </div>
     </div>
+    <ul id="social-media-button-container">
+        <a href="https://www.facebook.com/grmlnzband/">
+     		<li id="facebook" class="social-media-button"> </li>
+     	</a>
+
+	    <a href="https://grmlnz.bandcamp.com/">
+     		<div id="bandcamp" class="social-media-button"> </div>
+     	</a>
+    </ul>
     </body>
 </html>
