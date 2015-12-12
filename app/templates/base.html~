@@ -30,7 +30,7 @@
      	</a>
 
 	    <a href="https://grmlnz.bandcamp.com/">
-     		<div id="bandcamp" class="social-media-button"> </div>
+     		<li id="bandcamp" class="social-media-button"> </li>
      	</a>
     </ul>
     </body>
