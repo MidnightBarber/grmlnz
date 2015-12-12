@@ -10,10 +10,8 @@ body, html {
     height: 10em;
     background-image: url("../images/bullet.png");
     background-size:cover;
-    background-image: url("../images/bullet.png");
-    background-size: cover;
-    height: 10em;
     overflow: hidden;
+    box-shadow: 0px 0px 0.5em 0.25em black;
 }
 
 #header {
@@ -21,6 +19,7 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 #header > ul {
     list-style: none;
@@ -30,6 +29,7 @@ body, html {
     text-align: center;
     margin: auto;
     padding: 0;
+    /*background-color: rgba(0, 0, 0, 0.9);*/
 }
 
 #header a {
@@ -52,40 +52,58 @@ body, html {
 #content-container {
     height: calc(100% - 10em);
     background-color: #222;
-    background-image: url("../images/grmlnz-g.png");
-    background-size: 70em;
-    background-position: 50% 2em;
-    background-repeat: no-repeat;
+    background-image: url("../images/grmlnzback.jpeg");
+    background-size: cover;
     background-attachment: fixed;
 }
 
 #content {
     height: 100%;
-    width: 70em;
+    width: 60em;
     margin: 0px auto;
-    background-color: rgba(95, 95, 95, 0.85);
     overflow: auto;
 }
 
-#content-container {
-	height: 100vh;
-	background-image: url("../images/grmlnz-g.png");
-	background-size: cover;
+#social-media-button-container {
+    position: fixed;
+    display: table;
+    padding: 0;
+    left: 15;
+    top: 10em;
+    list-style: none;
+    text-align: center;
+    width: 5em;
+    height: 4.5em;
+}
 
-	}
-#facebook {
+#social-media-button-container a {
+    display: table-row;
+    text-decoration: none;
+    height: auto;
+    padding: 0;
+}
+
+.social-media-button {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    background-size: cover;
+}
+
+#facebook { 
 	background-image: url("../images/facebookbutton.png");
-	height: 5em;
-	width: 5em;
-	background-size: cover;
-	}
+}
 	
 #bandcamp {
-	background-image: url("../images/bandcampbutton.png");
-	height: 5em;
-	width: 5em;
-	background-size: cover;
-	}
-	
+	background-image: url("../images/BandcampButton.png");
+}
+
+#player-container {
+    position: fixed;
+    left: 15;
+    bottom: 5;
+    width: 10em;
+    height: 2.5em;
+}	
 
 	

@@ -4,7 +4,8 @@ from app import app
 @app.route("/")
 @app.route("/index")
 def index():
-    return render_template("index.html")
+    page = "index"
+    return render_template("index.html", page="index")
     
 @app.route("/music")
 def music():
@@ -15,4 +16,9 @@ def calendar():
     return render_template("calendar.html")
 
 @app.route("/bio")
-def bio()
+def bio():
+    return render_template("bio.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")

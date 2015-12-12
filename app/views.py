@@ -4,7 +4,8 @@ from app import app
 @app.route("/")
 @app.route("/index")
 def index():
-    return render_template("index.html")
+    page = "index"
+    return render_template("index.html", page="index")
     
 @app.route("/music")
 def music():
