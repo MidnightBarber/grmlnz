@@ -68,11 +68,10 @@ body, html {
     position: fixed;
     display: table;
     padding: 0;
-    left: 15;
+    left: 1em;
     top: 10em;
     list-style: none;
     text-align: center;
-    width: 5em;
     height: 4.5em;
 }
 
@@ -101,9 +100,19 @@ body, html {
 #player-container {
    position:fixed;
    left: 15px;
-   bottom: 5px;
+   bottom: .5em;
    width: 10em;
-   height: 2.5em;
 }	
+
+#content-right {
+	position: fixed;
+	right: 1em;
+	height :100%;
+	width: 10em;
+	top: 10em;
+	background-color: white;
+
+}
+
 
 	
