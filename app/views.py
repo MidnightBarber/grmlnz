@@ -1,6 +1,11 @@
 from flask import render_template
 from app import app
 
+_SONGS = [
+    "./static/",
+    ""
+]
+
 @app.route("/")
 @app.route("/index")
 def index():

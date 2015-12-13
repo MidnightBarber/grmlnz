@@ -50,7 +50,7 @@ body, html {
 }
 
 #content-container {
-    height: calc(100% - 10em);
+    height: 100%/*calc(100% - 10em)*/;
     background-color: #222;
     background-image: url("../images/grmlnzback.jpeg");
     background-size: cover;
@@ -58,7 +58,7 @@ body, html {
 }
 
 #content {
-    height: 100%;
+    height: auto;
     width: 60em;
     margin: 0px auto;
     overflow: auto;
