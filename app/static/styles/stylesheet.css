@@ -99,11 +99,11 @@ body, html {
 }
 
 #player-container {
-    position: fixed;
-    left: 15;
-    bottom: 5;
-    width: 10em;
-    height: 2.5em;
+   position:fixed;
+   left: 15px;
+   bottom: 5px;
+   width: 10em;
+   height: 2.5em;
 }	
 
 	
