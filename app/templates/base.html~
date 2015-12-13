@@ -5,6 +5,10 @@
         {% if page == "index" %}
         <link rel="stylesheet" type="text/css" hreff="../static/styles/stylesheet-index.css" />
         {% endif %}
+        <script type="text/javascript" src="../static/scripts/jquery-2.1.4.min.js">
+        </script>
+        <script>
+        </script>
     </head>
     <body>
     <div id="header-container">
@@ -34,7 +38,8 @@
      	</a>
     </ul>
     <div id="player-container">
-        <audio id="">
+        <audio id="audio-player" controls="controls" preload="none" src="../static/music/offensive.mp3">
+        </audio>
     </div>
     </body>
 </html>

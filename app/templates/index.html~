@@ -1,9 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1 style="color:white;">Index</h1>
-<p>kfwiuehfwoiejfasdfjbhwaviuwbrviuawbrfvuiaerwviu</p>
-<p>afdwqefiwef</p>
-{% for i in xrange(40) %}
-<br />
-{% endfor %}
+<button id="test-button">
+Test
+</button>
 {% endblock %}
