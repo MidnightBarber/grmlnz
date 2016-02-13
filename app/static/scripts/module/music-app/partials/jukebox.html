@@ -1,0 +1,7 @@
+<div id="music-container">
+	<span id="now-playing-title">{{ jukebox.chosenSong.songName }}</span>
+	<div id="music-control-container">
+		<button id="song-play-button" class="music-control-button" ng-if="!jukebox.songPlaying" ng-click="jukebox.playSong()"></button>
+		<button id="song-pause-button" class="music-control-button" ng-if="jukebox.songPlaying" ng-click="jukebox.pauseSong()"></button>
+	</div>
+</div>

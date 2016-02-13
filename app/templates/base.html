@@ -1,45 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="grmlnzModule">
     <head>
         <link rel="stylesheet" type="text/css" href="../static/styles/stylesheet.css" />
-        {% if page == "index" %}
-        <link rel="stylesheet" type="text/css" hreff="../static/styles/stylesheet-index.css" />
-        {% endif %}
-        <script type="text/javascript" src="../static/scripts/jquery-2.1.4.min.js">
-        </script>
-        <script type="text/javascript" src="../static/scripts/main.js">
-        </script>
+        <link href='https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="../static/scripts/shared/angular.min.js"></script>
+        <script type="text/javascript" src="../static/scripts/shared/angular-route.min.js"></script>
+        <script type="text/javascript" src="../static/scripts/shared/angular-css.min.js"></script>
+        <script type="text/javascript" src="../static/scripts/module/view-app/controllers.js"></script>
+        <script type="text/javascript" src="../static/scripts/module/view-app/app.js"></script>
+        <script type="text/javascript" src="../static/scripts/module/music-app/controllers.js"></script>
+        <script type="text/javascript" src="../static/scripts/module/music-app/directives.js"></script>
+        <script type="text/javascript" src="../static/scripts/module/music-app/app.js"></script>
+        <script type="text/javascript" src="../static/scripts/module/module.js"></script>
+        <base href="/">
     </head>
     <body>
     <div id="header-container">
+        <span id="band-name-header">GRMLNZ</span>
         <div id="header">
             <ul>
-                <a href="index"><li>Home</li></a>
-                <a href="music"><li>Music</li></a>
-                <a href="calendar"><li>Calendar</li></a>
-                <a href="bio"><li>Bio</li></a>
-                <a href="contact"><li>Contact</li></a>
+                <a href="/index"><li>Home</li></a>
+                <a href="/music"><li>Music</li></a>
+                <a href="/calendar"><li>Calendar</li></a>
+                <a href="/bio"><li>Bio</li></a>
+                <a href="/contact"><li>Contact</li></a>
             </ul>
         </div>
     </div>
     <div id="content-container">
-        <div id="content">
-        {% block content %}
-        {% endblock %}
-        </div>
-    </div>
-    <ul id="social-media-button-container">
-        <a href="https://www.facebook.com/grmlnzband/">
-     		<li id="facebook" class="social-media-button"> </li>
-     	</a>
+        <div ng-view id="content">
 
-	    <a href="https://grmlnz.bandcamp.com/">
-     		<li id="bandcamp" class="social-media-button"> </li>
-     	</a>
-    </ul>
-    <div id="player-container">
-        <audio id="audio-player" controls="controls" preload="none" src="../static/music/offensive.mp3">
-        </audio>
+        </div>
+        <jukebox></jukebox>
     </div>
     </body>
 </html>

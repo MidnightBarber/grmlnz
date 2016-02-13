@@ -1,17 +1,38 @@
-body, html {
-    font-family: Arial, sans-serif;
-    margin: 0px;
+html, body {
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
     height: 100%;
+    margin: 0px;
+}
+
+/* Temporary for page identification */
+h1 {
+    color: white;
+    margin: 0;
 }
 
 #header-container {
     position: relative;
     width: 100%;
+    min-width: 1000px;
     height: 10em;
-    background-image: url("../images/bullet.png");
-    background-size:cover;
-    overflow: hidden;
-    box-shadow: 0px 0px 0.5em 0.25em black;
+    background-color: rgb(25, 25, 25);
+    box-shadow: 4px 0px 4px 2px rgb(0, 0, 0);
+}
+
+#band-name-header {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    font-family: "Permanent Marker", cursive;
+    font-size: 5em;
+    color: rgb(0, 229, 0);
 }
 
 #header {
@@ -19,8 +40,8 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
 }
+
 #header > ul {
     list-style: none;
     width: 60em;
@@ -29,81 +50,88 @@ body, html {
     text-align: center;
     margin: auto;
     padding: 0;
-    /*background-color: rgba(0, 0, 0, 0.9);*/
 }
 
 #header a {
     display: table-cell;
+    background-color: rgb(50, 50, 50);
     vertical-align: middle;
-    width: 4em;
+    width: 5em;
     text-decoration: none;
     color: white;
-    /*border: .2em solid black;*/
-    border-radius: 75%;
 }
 
 #header a:hover {
-    background-color: rgba(75, 75, 75, 0.7);
-    box-shadow: 0px 0px 2em 0.5em rgb(75, 75, 75);
-	text-shadow: 0px 0px 0.5em rgb(200, 0, 0);
+    background-color: rgb(70, 70, 70);
     text-shadow: 0px 0px 0.5em rgb(255, 255, 255);
 }
 
 #content-container {
-    height: 100%/*calc(100% - 10em)*/;
-    background-color: #222;
-    background-image: url("../images/grmlnzback.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-width: 1000px;
+    height: calc(100% - 10em);
+    background-color: rgb(75, 75, 75);
+    background-image: url("../images/grmlnz-g.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #content {
-    height: auto;
-    width: 60em;
+    position: relative;
+    height: 100%;
+    width: 70em;
     margin: 0px auto;
-    overflow: auto;
+    background-color: rgba(30, 30, 30, 0.8);
 }
 
-#social-media-button-container {
+#music-container {
     position: fixed;
-    display: table;
-    padding: 0;
-    left: 15;
-    top: 10em;
-    list-style: none;
-    text-align: center;
-    width: 5em;
-    height: 4.5em;
-}
-
-#social-media-button-container a {
-    display: table-row;
-    text-decoration: none;
-    height: auto;
-    padding: 0;
-}
-
-.social-media-button {
-    display: inline-block;
-    width: 3em;
-    height: 3em;
-    background-size: cover;
-}
-
-#facebook { 
-	background-image: url("../images/facebookbutton.png");
-}
-	
-#bandcamp {
-	background-image: url("../images/BandcampButton.png");
-}
-
-#player-container {
-    position: fixed;
-    left: 15px;
-    bottom: 5px;
-    width: 10em;
+    left: 0;
+    bottom: 0;
+    width: 20em;
     height: 2.5em;
-}	
+    background-color: rgb(10, 10, 10);
+}
 
-	
+#now-playing-title {
+    color: white;
+}
+
+#music-control-container {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.music-control-button {
+    border: none;
+    padding: 0;
+    background-color: inherit;
+}
+
+.music-control-button:hover {
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+}
+
+#song-play-button {
+    width: 4em;
+    height: 100%;
+    background-image: url("../images/assets/play-button.png");
+    background-size: 2em 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#song-pause-button {
+    width: 4em;
+    height: 100%;
+    background-image: url("../images/assets/pause-button.png");
+    background-size: 2em 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
