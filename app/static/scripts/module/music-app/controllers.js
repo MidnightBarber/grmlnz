@@ -3,6 +3,10 @@
 angular.module("musicControllers", ["door3.css"])
 
 .controller("jukeboxController", ["$scope", "$css", function($scope, $css){
+    $css.bind({
+       href: "static/styles/stylesheet.css" 
+    }, $scope);
+    
 	var vm = this;
 
 	vm.songArray = [
